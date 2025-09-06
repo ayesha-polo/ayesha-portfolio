@@ -6,7 +6,7 @@ Senior CS @ UT Tyler • AI/ML • FastAPI • RAG • PostgreSQL (pgvector) •
 ---
 
 ### About Me
-I build AI systems that actually ship. My flagship project is the **Virtual Teaching Assistant (VTA)** for UT Tyler, deployed on the UT System’s private cloud. It runs directly on professors’ notes with guardrails to ensure secure, accurate answers and includes dashboards for faculty to understand student trends. I also built the **Noodle Agent** during my internship at Noodle Seed—an agent that remembers context, supports voice interactions, summarizes conversations, and connects users to humans when needed.
+I build AI systems that actually ship. My flagship project is the **Virtual Teaching Assistant (VTA)** for UT Tyler, deployed on the UT System’s private cloud. It runs directly on professors’ notes with guardrails to ensure secure, accurate answers and includes dashboards for faculty to understand student trends. I also built the **Noodle Agent** during my internship at Noodle Seed,an agent that remembers context, supports voice interactions, summarizes conversations, and connects users to humans when needed.
 
 - Email: **ayeshaa.khalid89@gmail.com**
 - LinkedIn: **https://linkedin.com/in/ayesha-khalid-4abb97234**
@@ -25,7 +25,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
   - **Pilot study:** Launching soon.  
 - **My role:** Developed from the ground up (architecture, retrieval pipeline, dashboards).
 
-**Tech:** FastAPI • React • PostgreSQL + pgvector • Docker • NGINX
+**Tech:** FastAPI • React • PostgreSQL + pgvector • **RAG (Retrieval-Augmented Generation)** • Docker • NGINX
 
 **Screenshots**
 
@@ -67,7 +67,7 @@ Deployed on Fly.dev; planned integration into the company website.
   - Summarizes conversations and can route users to a human.  
 - **My role:** Agent behaviors, voice loop, context management, deployment.
 
-**Tech:** Next.js • Supabase • Gemini Live • WebSocket
+**Tech:** Next.js • Supabase • Voice Agents • WebSocket
 
 **Screenshot**
 
