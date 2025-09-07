@@ -120,3 +120,15 @@ Khalid, A., Dakshit, S., & Mokhtari, K. (In Press). *Human-AI Partnerships in Hi
 ## 🛠 Skills
 
 Python • FastAPI • PostgreSQL/pgvector • Docker • NGINX • React.js • Azure • AWS
+
+### 🔒 Note on Private Work
+Most of my professional projects are hosted in private organization repositories and cannot be shared publicly due to confidentiality.  
+To give recruiters and collaborators an overview of my skills, I’ve included selected highlights, screenshots, code snippets, and project summaries in this portfolio.
+
+If you’d like to learn more about my work with:
+
+- **Virtual Teaching Assistant (VTA)** — AI-driven education platform deployed on UT System’s private cloud
+- **Noodle Agent** — real-time voice-enabled AI assistant deployed at Noodle Seed
+
+I’m happy to discuss the technical details, architecture, and outcomes during interviews or by request.
+
