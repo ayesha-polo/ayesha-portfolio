@@ -74,6 +74,8 @@ Deployed on Fly.dev; planned integration into the company website.
 <img src="assets/images/noodle_agent.png" width="900" alt="Noodle Agent UI"/>
 
 **Short demo**
+###  Demo – Noodle Agent
+[![Watch the Noodle Agent Demo](assets/images/noodle_agent_demo.png)](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
 
 <!-- Use one of these (keep GIF or MP4, remove whichever you don't need) -->
 <img src="assets/gifs/Noodleagent-demo.gif" width="900" alt="Noodle Agent demo"/>
