@@ -27,6 +27,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 
 **Tech:** FastAPI • React • PostgreSQL + pgvector • **RAG (Retrieval-Augmented Generation)** • Docker • NGINX
 
+
 **Screenshots**
 
 <img src="assets/images/vta_student_ui.png" width="900" alt="VTA Student UI"/>
