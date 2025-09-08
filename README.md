@@ -35,11 +35,11 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 
 <!-- Use one of these (keep GIF or MP4, remove whichever you don't need) -->
 <img src="assets/gifs/VTA-demo.gif" width="900" alt="VTA demo"/>
+[during the early stages while testing](https://drive.google.com/file/d/1jQTqvws93JTV5bCdw8rvA-M49xWB-r2K/view?usp=sharing)
 <!-- or MP4
 <video src="assets/videos/VTA-demo.mp4" width="900" controls></video>
--->
-
-**Key snippet (Python)**
+--
+****Key snippet (Python)** snippet (Python)**
 
 ```python
 # Simplified retrieval: pgvector cosine similarity
