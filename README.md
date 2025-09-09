@@ -114,7 +114,110 @@ const startVoiceSession = useCallback(async (sessionId?: string) => {
   });
 }, [session, getEphemeralKey]);
 ```
-Caption: Starts a secure Realtime voice session using ephemeral keys and routes agent audio for low-latency playback.
+ Starts a secure Realtime voice session using ephemeral keys and routes agent audio for low-latency playback.
+ 
+### 2. WebRTC Audio Streaming Setup
+
+```typescript
+// Excerpted for portfolio — keys & prompts redacted
+// useRealtimeSession.ts - WebRTC connection with audio capture
+sessionRef.current = new RealtimeSession(rootAgent, {
+  transport: new OpenAIRealtimeWebRTC({
+    audioElement,
+    changePeerConnection: async (pc: RTCPeerConnection) => {
+      applyCodec(pc); // Apply codec preferences (opus, pcm16, etc.)
+      return pc;
+    },
+  }),
+  model: 'gpt-4o-realtime-preview-2025-06-03',
+  config: {
+    inputAudioFormat: audioFormat,
+    outputAudioFormat: audioFormat,
+    inputAudioTranscription: {
+      model: 'whisper-1',
+    },
+    turnDetection: {
+      type: 'server_vad',
+      threshold: 0.5,
+      prefix_padding_ms: 300,
+      silence_duration_ms: 200,
+      create_response: true
+    }
+  }
+});
+```
+Sets up OpenAI Realtime + WebRTC with codec preferences and server-side VAD; streams mic input and receives agent speech in real time.
+
+### 3. Real-time Audio Event Handling
+
+```typescript
+// Excerpted for portfolio — events simplified
+// useRealtimeSession.ts - Processing audio chunks and transcripts
+function handleTransportEvent(event: any) {
+  switch (event.type) {
+    case "conversation.item.input_audio_transcription.completed":
+      historyHandlers.handleTranscriptionCompleted(event, currentSessionId);
+      break;
+    case "response.audio_transcript.delta":
+      historyHandlers.handleTranscriptionDelta(event);
+      updateAgentSpeaking(true);
+      break;
+    case "response.audio.delta":
+      updateAgentSpeaking(true);
+      break;
+    case "response.audio.done":
+      updateAgentSpeaking(false);
+      break;
+  }
+}
+```
+Handles live events from the voice agent, partial user transcripts, token-streamed agent text, and audio frames to drive responsive UI state.
+
+### 4.Audio Format and Codec Handling
+
+```typescript
+// codecUtils.ts - Audio format configuration
+// Excerpted for portfolio — shows PCM16/G.711 handling
+export function audioFormatForCodec(codec: string): 'pcm16' | 'g711_ulaw' | 'g711_alaw' {
+  let audioFormat: 'pcm16' | 'g711_ulaw' | 'g711_alaw' = 'pcm16';
+  if (typeof window !== 'undefined') {
+    const c = codec.toLowerCase();
+    if (c === 'pcmu') audioFormat = 'g711_ulaw';
+    else if (c === 'pcma') audioFormat = 'g711_alaw';
+  }
+  return audioFormat;
+}
+```
+Utility for audio codecs & formats (PCM16 / G.711) to maximize WebRTC compatibility and reduce latency.
+
+### 5.Backend Session Management
+
+```typescript
+// /api/voice-session/route.ts - Creating ephemeral keys for WebRTC
+// Excerpted for portfolio — API key & instructions redacted
+export async function GET(request: Request) {
+  const response = await fetch('https://api.openai.com/v1/realtime/sessions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: 'gpt-4o-realtime-preview-2025-06-03',
+      voice: 'alloy',
+      instructions: "Agent instructions redacted"
+    })
+  });
+
+  const data = await response.json();
+  return NextResponse.json({
+    apiKey: data.client_secret.value,
+    sessionId: data.id
+  });
+}
+```
+Server endpoint that mints ephemeral Realtime session credentials (no static keys in the client) and applies voice/instruction settings.
+ 
 
 ## 🏆 Achievements — Conferences & Publications
 
