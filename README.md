@@ -86,17 +86,34 @@ Currently deployed on Fly.dev, and will later be integrated into the company’s
 
 👉 [Watch the full demo here](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
 
-**Key snippet (HTML)**
+## 🎙 Voice Audio Capture and Streaming Architecture
 
-```html
-<!-- Minimal HTML component -->
-<div>
-  <h2>Noodle Agent</h2>
-  <p>This is a placeholder HTML component for the Noodle Agent project.</p>
-</div>
-```
+The Noodle Agent runs a **true voice loop** with OpenAI’s Realtime API over WebRTC: mic → STT → token LLM → incremental TTS, using ephemeral keys and codec tuning.  
+*(Excerpted for portfolio — API keys, prompts, and private endpoints redacted.)*
 
 ---
+
+### 1. Voice Session Initialization
+
+```typescript
+// Excerpted for portfolio — keys & prompts redacted
+// useVoiceAgent.ts - Starting a voice session
+const startVoiceSession = useCallback(async (sessionId?: string) => {
+  if (!audioElementRef.current) {
+    audioElementRef.current = new Audio();
+    audioElementRef.current.autoplay = true;
+  }
+
+  await session.connect({
+    getEphemeralKey: () => getEphemeralKey(sessionId),
+    audioElement: audioElementRef.current,
+    extraContext: {
+      userInfo: 'General user interested in Noodle Seed services',
+      sessionId: sessionId
+    }
+  });
+}, [session, getEphemeralKey]);
+
 
 ## 🏆 Achievements — Conferences & Publications
 
