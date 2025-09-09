@@ -28,7 +28,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 **Tech:** FastAPI • React • PostgreSQL + pgvector • **RAG (Retrieval-Augmented Generation)** • Docker • NGINX
 
 
-**Screenshots**
+**First image shows the Student-side interface of the Virtual Teaching Assistant (VTA); second image shows the Faculty Dashboard**
 
 <!-- Student and Faculty UI -->
 <img src="assets/images/student%20side.png" width="900" alt="Student side"/>
