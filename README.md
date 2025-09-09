@@ -65,6 +65,7 @@ def retrieve(conn, q_embed, k=5):
     ).fetchall()
     return [dict(r) for r in rows]
 ```
+
 ---
 
 ### 2) Noodle Agent (Noodle Seed)
@@ -134,4 +135,3 @@ If you’d like to learn more about my work with:
 - **Noodle Agent** — real-time voice-enabled AI assistant deployed at Noodle Seed
 
 I’m happy to discuss the technical details, architecture, and outcomes during interviews or by request.
-
