@@ -28,6 +28,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 **Tech:** FastAPI • React • PostgreSQL + pgvector • **RAG (Retrieval-Augmented Generation)** • Docker • NGINX
 
 
+
 **First image shows the Student-side interface of the Virtual Teaching Assistant (VTA); second image shows the Faculty Dashboard**
 
 <!-- Student and Faculty UI -->
@@ -35,7 +36,9 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 <img src="assets/images/faculty%20side.png" width="900" alt="Faculty side"/>
 
 <!-- Sentiment analysis workflow -->
+
 **The next two images, captured during the development phase, demonstrate testing of a sentiment analysis workflow: initially classifying each student query (positive/negative/neutral), later redesigned to comply with FERPA by aggregating sentiment at the topic level rather than per student**
+
 
 <img src="assets/images/b7a283cb-1964-465a-aa0b-5fdbd799260b.png" width="900" alt="Sentiment analysis 1"/>
 <img src="assets/images/sentiment%20analysis2.png" width="900" alt="Sentiment analysis 2"/>
@@ -68,6 +71,7 @@ def retrieve(conn, q_embed, k=5):
 ```
 
 ---
+
 
 ### 2) Noodle Agent (Noodle Seed)
 Built during my internship with Noodle Seed.  
@@ -218,6 +222,7 @@ export async function GET(request: Request) {
 ```
 Server endpoint that mints ephemeral Realtime session credentials (no static keys in the client) and applies voice/instruction settings.
  
+
 
 ## 🏆 Achievements — Conferences & Publications
 
