@@ -113,7 +113,8 @@ const startVoiceSession = useCallback(async (sessionId?: string) => {
     }
   });
 }, [session, getEphemeralKey]);
-
+```
+Caption: Starts a secure Realtime voice session using ephemeral keys and routes agent audio for low-latency playback.
 
 ## 🏆 Achievements — Conferences & Publications
 
