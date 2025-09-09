@@ -69,25 +69,21 @@ def retrieve(conn, q_embed, k=5):
 ---
 
 ### 2) Noodle Agent (Noodle Seed)
-Deployed on Fly.dev; planned integration into the company website.
+Built during my internship with Noodle Seed.  
+Currently deployed on Fly.dev, and will later be integrated into the company’s new website.  
 
-- **What it does:**  
-  - Human-like conversations with **context memory** across sessions.  
-  - **Voice-to-text** & **text-to-voice**.  
-  - Summarizes conversations and can route users to a human.  
-- **My role:** Agent behaviors, voice loop, context management, deployment.
+**What it does:**  
+- Human-like conversations with **context memory** across sessions  
+- **Voice-to-text** and **text-to-voice** support  
+- Summarizes conversations and can route users to a human  
+- **My role:** Agent behaviors, voice loop, context management, deployment  
 
-**Tech:** Next.js • Supabase • Voice Agents • WebSocket
+**Tech:** Next.js • Supabase • Voice Agents • WebSocket  
 
+### Demo – Noodle Agent
+![Noodle Agent Demo](assets/images/noodle_agent_demo.png)  
 
-###  Demo – Noodle Agent
-[![Watch the Noodle Agent Demo](assets/images/noodle_agent_demo.png)](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
-
-<!-- Use one of these (keep GIF or MP4, remove whichever you don't need) -->
-<img src="assets/gifs/Noodleagent-demo.gif" width="900" alt="Noodle Agent demo"/>
-<!-- or MP4
-<video src="assets/videos/Noodleagent-demo.mp4" width="900" controls></video>
--->
+👉 [Watch the full demo here](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
 
 **Key snippet (HTML)**
 
