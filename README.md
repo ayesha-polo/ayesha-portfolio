@@ -49,7 +49,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 <!-- or MP4
 <video src="assets/videos/VTA-demo.mp4" width="900" controls></video>
 --
-****Key snippet (Python)** snippet (Python)**
+**Key snippet (Python)**
 
 ```python
 # Simplified retrieval: pgvector cosine similarity
@@ -65,7 +65,6 @@ def retrieve(conn, q_embed, k=5):
     ).fetchall()
     return [dict(r) for r in rows]
 ```
-
 ---
 
 ### 2) Noodle Agent (Noodle Seed)
