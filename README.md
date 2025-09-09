@@ -41,7 +41,6 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 <img src="assets/images/sentiment%20analysis2.png" width="900" alt="Sentiment analysis 2"/>
 
 
-**Short demo**
 
 <!-- Use one of these (keep GIF or MP4, remove whichever you don't need) -->
 <img src="assets/gifs/VTA-demo.gif" width="900" alt="VTA demo"/>
@@ -49,6 +48,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 
 ---
 **Key snippet (Python)**
+*This function powers semantic search by retrieving the top-k most relevant text chunks from PostgreSQL with pgvector cosine similarity (core to my RAG pipeline in the VTA project).*
 
 ```python
 # Simplified retrieval: pgvector cosine similarity
@@ -80,7 +80,7 @@ Currently deployed on Fly.dev, and will later be integrated into the company’s
 **Tech:** Next.js • Supabase • Voice Agents • WebSocket  
 
 ### Demo – Noodle Agent
-![Noodle Agent Demo](assets/images/noodle_agent_demo.png)  
+
 
 👉 [Watch the full demo here](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
 
