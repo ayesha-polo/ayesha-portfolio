@@ -47,7 +47,7 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 <img src="assets/gifs/VTA-demo.gif" width="900" alt="VTA demo"/>
 [This demo was created during the early development stage while testing.Click the link to watch](https://drive.google.com/file/d/1jQTqvws93JTV5bCdw8rvA-M49xWB-r2K/view?usp=sharing)
 <!-- or MP4
-<video src="assets/videos/VTA-demo.mp4" width="900" controls></video>
+
 ---
 **Key snippet (Python)**
 
