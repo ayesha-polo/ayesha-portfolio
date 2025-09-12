@@ -48,8 +48,19 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 <!-- Use one of these (keep GIF or MP4, remove whichever you don't need) -->
 <img src="assets/gifs/VTA-demo.gif" width="900" alt="VTA demo"/>
 
-### Demo
-[In this demo, you will see how the faculty side works. Click here to watch.](https://drive.google.com/file/d/19M3QBpgm-hR2OjApbll_TDeMHFD4KeKy/view?usp=sharing)
+### 🎥 Virtual Teaching Assistant – Demo Videos
+
+Here’s a quick look at how the **Virtual Teaching Assistant (VTA)** works in action.  
+Each demo highlights a different part of the system:
+
+- **[Demo 1 – Faculty Dashboard Overview](https://drive.google.com/file/d/19M3QBpgm-hR2OjApbll_TDeMHFD4KeKy/view?usp=sharing)**  
+  Walkthrough of the faculty dashboard, showing how instructors upload course materials and view student analytics.
+
+- **[Demo 2 – Student Experience + RAG Responses](https://drive.google.com/file/d/1idO392TR57FObSHaLEqZ9JX0OFVyAMq5/view?usp=sharing)**  
+  Demonstration of the student chatbot. See responses with and without RAG, watch how the “with RAG” answers come from the professor’s uploaded PDF, and how students can flag messages.
+
+- **[Demo 3 – Faculty View of Flagged Messages](https://drive.google.com/file/d/1flCoOL-c6GNQLdxVcL8nYEW_YuFQIVx2/view?usp=sharing)**  
+  Shows how faculty can review and address flagged student messages for quality assurance.
 
 ---
 **Key snippet (Python)**
@@ -85,10 +96,18 @@ Currently deployed on Fly.dev, and will later be integrated into the company’s
 
 **Tech:** Next.js • Supabase • Voice Agents • WebSocket  
 
-### Demo – Noodle Agent
+### 🗨️ Noodle Agent – Chat & Voice Demo  
+
+This demo shows how the **Noodle Agent** behaves as both a text and voice-based assistant.  
+You will see:  
+- How the chat interface handles conversation context.  
+- How the voice agent seamlessly picks up **exactly where you left off** in the chat.  
+- A smooth back-and-forth between voice and text modes plus all other features
+
+👉 **[Watch the full demo here](https://drive.google.com/file/d/1sNW0dkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)**  
 
 
-👉 [Watch the full demo here](https://drive.google.com/file/d/1sNWOdkUAWuPCqSBASFrmoXTMQg6c7_OE/view?usp=sharing)
+
 
 ## 🎙 Voice Audio Capture and Streaming Architecture
 
