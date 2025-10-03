@@ -51,16 +51,17 @@ Built for The University of Texas at Tyler; deployed on the UT System’s privat
 ### 🎥 Virtual Teaching Assistant – Demo Videos
 
 Here’s a quick look at how the **Virtual Teaching Assistant (VTA)** works in action.  
-Each demo highlights a different part of the system:
+This demo is a comprehensive walkthrough of the Virtual Teaching Assistant showcasing both faculty and student expereinces.
 
-- **[Demo 1 – Faculty Dashboard Overview](https://drive.google.com/file/d/19M3QBpgm-hR2OjApbll_TDeMHFD4KeKy/view?usp=sharing)**  
-  Walkthrough of the faculty dashboard, showing how instructors upload course materials and view student analytics.
+[![Watch the VTA Demo](assets/images/vta_student_ui.png)](https://drive.google.com/file/d/1tAs7MNRzAJ-skWdOI-TNUlY5cGq4pp9Y/view?usp=sharing)
 
-- **[Demo 2 – Student Experience + RAG Responses](https://drive.google.com/file/d/1idO392TR57FObSHaLEqZ9JX0OFVyAMq5/view?usp=sharing)**  
-  Demonstration of the student chatbot. See responses with and without RAG, watch how the “with RAG” answers come from the professor’s uploaded PDF, and how students can flag messages.
+**What you’ll see in this demo:**
+- **Faculty Dashboard** – Uploading course materials, viewing analytics, and managing student interactions.  
+- **Student Dashboard** – Conversational interface demonstrating RAG-based responses grounded in professor-uploaded notes.  
+- **Feedback Loop** – How flagged student messages are surfaced for instructors to review and improve content quality.  
 
-- **[Demo 3 – Faculty View of Flagged Messages](https://drive.google.com/file/d/1flCoOL-c6GNQLdxVcL8nYEW_YuFQIVx2/view?usp=sharing)**  
-  Shows how faculty can review and address flagged student messages for quality assurance.
+This end-to-end walkthrough highlights the **retrieval-augmented generation (RAG) pipeline**, **data visualization for analytics**, and **feedback mechanisms** that make the VTA an adaptive, AI-driven learning companion.
+
 
 ---
 **Key snippet (Python)**
