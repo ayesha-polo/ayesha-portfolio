@@ -250,16 +250,21 @@ Server endpoint that mints ephemeral Realtime session credentials (no static key
 
 **Conferences & Presentations**
 
-- **Annual Research Showcase, UT Tyler, Tyler, TX, 2025**  
-  *VTA: Enhancing Teaching and Learning with Virtual Teaching Assistant*  
+-  **Texas Advanced Computing Center for Texas Researchers Symposium (TACCSTER), Austin, TX,September 2025**  
+  *Bridging AI and Education: The Virtual Teaching Assistant*  
   **Authors:** A. Khalid, S. Dakshit, K. Mokhtari
+   
+- **ConnectUR 2025 Annual Conference, Grand Rapids, MI, July 2025**  
+*Empowering Undergraduate Research through Data Visualization*  
+**Summary:** Presented on leveraging tools like Matplotlib and Seaborn to visualize research data, and shared insights from the Virtual Teaching Assistant (VTA) project at the University of Texas at Tyler. Selected abstract presentation among nationwide undergraduate researchers.
 
-- **UT System AI Symposium in Healthcare, Houston, TX, 2025**  
+
+- **UT System AI Symposium in Healthcare, Houston, TX, May 2025**  
   *Virtual Teaching Assistants (VTAs): An AI-Driven Framework for Personalized Learning Across Disciplines*  
   **Authors:** A. Khalid, S. Dakshit, K. Mokhtari
 
-- **Texas Advanced Computing Center for Texas Researchers Symposium (TACCSTER), Austin, TX, 2025 (forthcoming)**  
-  *Bridging AI and Education: The Virtual Teaching Assistant*  
+- **Annual Research Showcase, UT Tyler, Tyler, TX, 2025**  
+  *VTA: Enhancing Teaching and Learning with Virtual Teaching Assistant*  
   **Authors:** A. Khalid, S. Dakshit, K. Mokhtari
 
 **Paper (Accepted)**
